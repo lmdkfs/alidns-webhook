@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/jetstack/cert-manager/pkg/acme/webhook/cmd"
-	"github.com/pragkent/alidns-webhook/alidns"
+	"github.com/cert-manager/cert-manager/pkg/acme/webhook/cmd"
+	"github.com/lmdkfs/alidns-webhook/alidns"
 	"k8s.io/klog"
 )
 

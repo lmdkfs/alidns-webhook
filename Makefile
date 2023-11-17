@@ -7,6 +7,13 @@ test:
 docker:
 	docker build -t $(IMAGE_NAME):$(IMAGE_TAG) .
 
-release:
+podman:
+	podman build -t $(IMAGE_NAME):$(IMAGE_TAG) .
+
+release-docker:
 	docker build -t $(IMAGE_NAME):$(IMAGE_TAG) .
 	docker push $(IMAGE_NAME):$(IMAGE_TAG)
+
+release-podman:
+	podman build -t $(IMAGE_NAME):$(IMAGE_TAG) .
+	podman push $(IMAGE_NAME):$(IMAGE_TAG)
